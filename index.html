@@ -318,6 +318,10 @@ button{font-family:inherit}
 .sim-stages{grid-template-columns:1fr}
 .step6-header h2{font-size:22px}
 }
+.mobile-hint{display:none}
+@media(max-width:968px){
+.mobile-hint{display:block}
+}
 </style>
 </head>
 <body>
@@ -403,9 +407,9 @@ button{font-family:inherit}
 <div>
 <p style="margin:12px 0;color:var(--text-muted);font-style:italic"> <strong>Які дії учасників можна вважати неетичними?</strong></p>
 <div class="task-options" id="s1t1">
-<div class="option" data-correct="false" onclick="sel(this,'s1t1')"><div class="option-radio"></div><div class="option-text"><div class="option-label">😐 Тільки Марк, бо він перебив Зою</div></div></div>
-<div class="option" data-correct="true" onclick="sel(this,'s1t1')"><div class="option-radio"></div><div class="option-text"><div class="option-label">💡 Марк (принизив ідею), учні, які сміялися (підтримали агресора), і ті, хто промовчав (бездіяльністю дозволили порушенню меж)</div></div></div>
-<div class="option" data-correct="false" onclick="sel(this,'s1t1')"><div class="option-radio"></div><div class="option-text"><div class="option-label">😐 Ніхто, бо це просто жарт і робочий процес</div></div></div>
+<div class="option" data-correct="false" onclick="sel(this,'s1t1')"><div class="option-radio"></div><div class="option-text"><div class="option-label"> Тільки Марк, бо він перебив Зою</div></div></div>
+<div class="option" data-correct="true" onclick="sel(this,'s1t1')"><div class="option-radio"></div><div class="option-text"><div class="option-label">Марк (принизив ідею), учні, які сміялися (підтримали агресора), і ті, хто промовчав (бездіяльністю дозволили порушенню меж)</div></div></div>
+<div class="option" data-correct="false" onclick="sel(this,'s1t1')"><div class="option-radio"></div><div class="option-text"><div class="option-label">Ніхто, бо це просто жарт і робочий процес</div></div></div>
 </div>
 <div id="s1t1f" class="feedback" style="display:none"></div>
 </div>
@@ -554,9 +558,9 @@ button{font-family:inherit}
 <h3 style="color:var(--primary);margin-bottom:12px"> Крок 1. Що для тебе важливо в цій ситуації?</h3>
 <p style="margin-bottom:16px;color:var(--text-muted);font-style:italic">Перш ніж діяти, визнач свої цінності — вони стануть орієнтиром для відповідального вибору.</p>
 <div class="task-options" id="alg21">
-<div class="option" data-correct="true" data-score="3" onclick="algSel2(this,'alg21',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">💎 «Для мене важливі чесність і справедливість. Я не хочу порушувати правила, але також ціную дружбу»</div><div class="option-explanation">✅ Чудово! Ти визначив(ла) цінності — це основа відповідальної позиції.</div></div></div>
-<div class="option" data-correct="false" data-score="1" onclick="algSel2(this,'alg21',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😐 «Головне — щоб Олексій не образився. Цінності тут не важливі»</div><div class="option-explanation"> Ігнорування цінностей може призвести до неетичних дій.</div></div></div>
-<div class="option" data-correct="false" data-score="0" onclick="algSel2(this,'alg21',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😤 «Нехай робить, що хоче — це не моя проблема»</div><div class="option-explanation">💡 Байдужість — це теж вибір, але він не допомагає ні другу, ні тобі.</div></div></div>
+<div class="option" data-correct="true" data-score="3" onclick="algSel2(this,'alg21',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Для мене важливі чесність і справедливість. Я не хочу порушувати правила, але також ціную дружбу»</div><div class="option-explanation">✅ Чудово! Ти визначив(ла) цінності — це основа відповідальної позиції.</div></div></div>
+<div class="option" data-correct="false" data-score="1" onclick="algSel2(this,'alg21',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Головне — щоб Олексій не образився. Цінності тут не важливі»</div><div class="option-explanation"> Ігнорування цінностей може призвести до неетичних дій.</div></div></div>
+<div class="option" data-correct="false" data-score="0" onclick="algSel2(this,'alg21',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Нехай робить, що хоче — це не моя проблема»</div><div class="option-explanation">💡 Байдужість — це теж вибір, але він не допомагає ні другу, ні тобі.</div></div></div>
 </div>
 <div id="alg21f" class="feedback" style="display:none"></div>
 </div>
@@ -578,9 +582,9 @@ button{font-family:inherit}
 <h3 style="color:var(--primary);margin-bottom:12px">❓ Крок 3. Яку дію ти обереш?</h3>
 <p style="margin-bottom:16px;color:var(--text-muted);font-style:italic">На основі цінностей та аналізу наслідків обери дію, яка не порушує прав і гідності інших.</p>
 <div class="task-options" id="alg23">
-<div class="option" data-correct="false" data-score="1" onclick="algSel2(this,'alg23',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😐 «Дам списати, щоб не конфліктувати»</div><div class="option-explanation">💡 Це порушує принципи чесності та справедливості.</div></div></div>
-<div class="option" data-correct="true" data-score="3" onclick="algSel2(this,'alg23',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">💬 «Олексію, я розумію, що ти хвилюєшся. Але списування — це нечесно. Давай я допоможу тобі розібратися з темою перед уроком»</div><div class="option-explanation">✅ Чудово! Ти поєднав(ла) чесність із підтримкою друга — це «Я-повідомлення» без приниження.</div></div></div>
-<div class="option" data-correct="false" data-score="0" onclick="algSel2(this,'alg23',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😠 «Ти що, зовсім вже?! Сам готуйся, не ліз до мене!»</div><div class="option-explanation">💡 Це порушує гідність друга й не вирішує проблему.</div></div></div>
+<div class="option" data-correct="false" data-score="1" onclick="algSel2(this,'alg23',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Дам списати, щоб не конфліктувати»</div><div class="option-explanation">💡 Це порушує принципи чесності та справедливості.</div></div></div>
+<div class="option" data-correct="true" data-score="3" onclick="algSel2(this,'alg23',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Олексію, я розумію, що ти хвилюєшся. Але списування — це нечесно. Давай я допоможу тобі розібратися з темою перед уроком»</div><div class="option-explanation">✅ Чудово! Ти поєднав(ла) чесність із підтримкою друга — це «Я-повідомлення» без приниження.</div></div></div>
+<div class="option" data-correct="false" data-score="0" onclick="algSel2(this,'alg23',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Ти що, зовсім вже?! Сам готуйся, не ліз до мене!»</div><div class="option-explanation">💡 Це порушує гідність друга й не вирішує проблему.</div></div></div>
 </div>
 <div id="alg23f" class="feedback" style="display:none"></div>
 </div>
@@ -590,9 +594,9 @@ button{font-family:inherit}
 <h3 style="color:var(--primary);margin-bottom:12px">❓ Крок 4. Що робити, якщо ти вже дав(ла) списати?</h3>
 <p style="margin-bottom:16px;color:var(--text-muted);font-style:italic">Відповідальна поведінка передбачає визнання помилок і їх виправлення.</p>
 <div class="task-options" id="alg24">
-<div class="option" data-correct="false" data-score="1" onclick="algSel2(this,'alg24',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😐 «Зроблю вигляд, що нічого не сталося»</div><div class="option-explanation"> Ігнорування помилки не виправляє ситуацію.</div></div></div>
-<div class="option" data-correct="false" data-score="0" onclick="algSel2(this,'alg24',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😠 «Це Олексій винен — він мене попросив»</div><div class="option-explanation"> Перекладання провини — це не відповідальність.</div></div></div>
-<div class="option" data-correct="true" data-score="3" onclick="algSel2(this,'alg24',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">🤝 «Олексію, я помилувся, що дав тобі списати. Це було нечесно. Давай наступного разу я допоможу тобі підготуватися заздалегідь»</div><div class="option-explanation">✅ Чудово! Ти визнав(ла) помилку й запропонував(ла) конструктивне рішення.</div></div></div>
+<div class="option" data-correct="false" data-score="1" onclick="algSel2(this,'alg24',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Зроблю вигляд, що нічого не сталося»</div><div class="option-explanation"> Ігнорування помилки не виправляє ситуацію.</div></div></div>
+<div class="option" data-correct="false" data-score="0" onclick="algSel2(this,'alg24',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Це Олексій винен — він мене попросив»</div><div class="option-explanation"> Перекладання провини — це не відповідальність.</div></div></div>
+<div class="option" data-correct="true" data-score="3" onclick="algSel2(this,'alg24',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Олексію, я помилявся, що дав тобі списати. Це було нечесно. Давай наступного разу я допоможу тобі підготуватися заздалегідь»</div><div class="option-explanation">✅ Чудово! Ти визнав(ла) помилку й запропонував(ла) конструктивне рішення.</div></div></div>
 </div>
 <div id="alg24f" class="feedback" style="display:none"></div>
 </div>
@@ -639,7 +643,7 @@ button{font-family:inherit}
 </div></div></div>
 
 <div class="accordion-item">
-<div class="accordion-header" onclick="toggleAccordion(this)">📋<span> «Цінності допомагають обирати поведінку, яка не порушує прав інших»</span><span class="accordion-icon">▼</span></div>
+<div class="accordion-header" onclick="toggleAccordion(this)"><span> 📋«Цінності допомагають обирати поведінку, яка не порушує прав інших»</span><span class="accordion-icon">▼</span></div>
 <div class="accordion-content"><div class="accordion-body">
 <div class="tf-container" id="s2t3q3">
 <div class="tf-card true-card" onclick="tfSel(this,'s2t3q3','true')"><div class="tf-card-icon">✅</div><div class="tf-card-title">Правда</div></div>
@@ -743,36 +747,36 @@ button{font-family:inherit}
 <div class="alg-step" id="algStep1">
 <h3 style="color:var(--primary);margin-bottom:12px">❓ Крок 1. Звернути увагу на дискомфорт учня</h3>
 <div class="task-options" id="alg1">
-<div class="option" data-correct="true" data-score="3" onclick="algSel(this,'alg1',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">💭 «Учень відчуває образу й сором. Це сигнал, що його межі порушено»</div><div class="option-explanation">✅ Усвідомлення емоції — перший крок до захисту меж.</div></div></div>
-<div class="option" data-correct="false" data-score="1" onclick="algSel(this,'alg1',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😐 «Та нічого, він просто пожартував — не варто звертати увагу»</div><div class="option-explanation">💡 Ігнорування дискомфорту не зупиняє порушення меж.</div></div></div>
-<div class="option" data-correct="false" data-score="0" onclick="algSel(this,'alg1',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😡 Одразу кинутися у відповідь: «Зараз я йому покажу!»</div><div class="option-explanation">💡 Реакція під впливом емоцій може погіршити ситуацію.</div></div></div>
+<div class="option" data-correct="true" data-score="3" onclick="algSel(this,'alg1',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Учень відчуває образу й сором. Це сигнал, що його межі порушено»</div><div class="option-explanation">✅ Усвідомлення емоції — перший крок до захисту меж.</div></div></div>
+<div class="option" data-correct="false" data-score="1" onclick="algSel(this,'alg1',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Та нічого, він просто пожартував — не варто звертати увагу»</div><div class="option-explanation">💡 Ігнорування дискомфорту не зупиняє порушення меж.</div></div></div>
+<div class="option" data-correct="false" data-score="0" onclick="algSel(this,'alg1',1)"><div class="option-radio"></div><div class="option-text"><div class="option-label">Одразу кинутися у відповідь: «Зараз я йому покажу!»</div><div class="option-explanation">💡 Реакція під впливом емоцій може погіршити ситуацію.</div></div></div>
 </div><div id="alg1f" class="feedback" style="display:none"></div>
 </div>
 
 <div class="alg-step hidden" id="algStep2">
 <h3 style="color:var(--primary);margin-bottom:12px">❓ Крок 2. Спокійно назвати, що неприємно</h3>
 <div class="task-options" id="alg2">
-<div class="option" data-correct="true" data-score="3" onclick="algSel(this,'alg2',2)"><div class="option-radio"></div><div class="option-text"><div class="option-label">💬 «Мені неприємно, коли ти жартуєш про мої оцінки при всіх. Будь ласка, не роби так»</div><div class="option-explanation">✅ Це «Я-повідомлення» — чітко, без приниження.</div></div></div>
-<div class="option" data-correct="false" data-score="1" onclick="algSel(this,'alg2',2)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😠 «Ти що, зовсім вже?! Сам ти виглядаєш гірше!»</div><div class="option-explanation">💡 Зустрічне приниження порушує межі іншого.</div></div></div>
-<div class="option" data-correct="false" data-score="0" onclick="algSel(this,'alg2',2)"><div class="option-radio"></div><div class="option-text"><div class="option-label">🙈 Промовчати й зробити вигляд, що все нормально</div><div class="option-explanation">💡 Мовчання сприймається як дозвіл продовжувати.</div></div></div>
+<div class="option" data-correct="true" data-score="3" onclick="algSel(this,'alg2',2)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Мені неприємно, коли ти жартуєш про мої оцінки при всіх. Будь ласка, не роби так»</div><div class="option-explanation">✅ Це «Я-повідомлення» — чітко, без приниження.</div></div></div>
+<div class="option" data-correct="false" data-score="1" onclick="algSel(this,'alg2',2)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Ти що, зовсім вже?! Сам ти виглядаєш гірше!»</div><div class="option-explanation">💡 Зустрічне приниження порушує межі іншого.</div></div></div>
+<div class="option" data-correct="false" data-score="0" onclick="algSel(this,'alg2',2)"><div class="option-radio"></div><div class="option-text"><div class="option-label">Промовчати й зробити вигляд, що все нормально</div><div class="option-explanation">💡 Мовчання сприймається як дозвіл продовжувати.</div></div></div>
 </div><div id="alg2f" class="feedback" style="display:none"></div>
 </div>
 
 <div class="alg-step hidden" id="algStep3">
 <h3 style="color:var(--primary);margin-bottom:12px">❓ Крок 3. Пояснити, якої поведінки очікуєш</h3>
 <div class="task-options" id="alg3">
-<div class="option" data-correct="false" data-score="1" onclick="algSel(this,'alg3',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😐 «Просто відчепися від мене»</div><div class="option-explanation">💡 Неясно, якої саме поведінки учень очікує.</div></div></div>
-<div class="option" data-correct="true" data-score="3" onclick="algSel(this,'alg3',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">💬 «Якщо хочеш обговорити моє навчання — давай наодинці. А при інших — утримайся від таких жартів»</div><div class="option-explanation">✅ Конкретне прохання + альтернатива.</div></div></div>
-<div class="option" data-correct="false" data-score="0" onclick="algSel(this,'alg3',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😤 «Я зараз піду і поскаржусь учительці!»</div><div class="option-explanation">💡 Погроза без спроби діалогу — ескалація.</div></div></div>
+<div class="option" data-correct="false" data-score="1" onclick="algSel(this,'alg3',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Просто відчепися від мене»</div><div class="option-explanation">💡 Неясно, якої саме поведінки учень очікує.</div></div></div>
+<div class="option" data-correct="true" data-score="3" onclick="algSel(this,'alg3',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Якщо хочеш обговорити моє навчання — давай наодинці. А при інших — утримайся від таких жартів»</div><div class="option-explanation">✅ Конкретне прохання + альтернатива.</div></div></div>
+<div class="option" data-correct="false" data-score="0" onclick="algSel(this,'alg3',3)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Я зараз піду і поскаржусь учительці!»</div><div class="option-explanation">💡 Погроза без спроби діалогу — ескалація.</div></div></div>
 </div><div id="alg3f" class="feedback" style="display:none"></div>
 </div>
 
 <div class="alg-step hidden" id="algStep4">
 <h3 style="color:var(--primary);margin-bottom:12px">❓ Крок 4. Якщо ситуація не змінюється — звернутись по допомогу</h3>
 <div class="task-options" id="alg4">
-<div class="option" data-correct="true" data-score="3" onclick="algSel(this,'alg4',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">🤝 «Поговорити з класним керівником, психологом або батьками — це не слабкість, а відповідальність за себе»</div><div class="option-explanation">✅ Звернення по допомогу — ознака сили, а не слабкості.</div></div></div>
-<div class="option" data-correct="false" data-score="1" onclick="algSel(this,'alg4',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😔 «Терпіти далі — може, сам заспокоїться»</div><div class="option-explanation">💡 Терпіння не зупиняє систематичне порушення меж.</div></div></div>
-<div class="option" data-correct="false" data-score="0" onclick="algSel(this,'alg4',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">😡 «Помститися йому тим самим — нехай відчує»</div><div class="option-explanation">💡 Помста створює новий цикл порушення меж.</div></div></div>
+<div class="option" data-correct="true" data-score="3" onclick="algSel(this,'alg4',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Поговорити з класним керівником, психологом або батьками — це не слабкість, а відповідальність за себе»</div><div class="option-explanation">✅ Звернення по допомогу — ознака сили, а не слабкості.</div></div></div>
+<div class="option" data-correct="false" data-score="1" onclick="algSel(this,'alg4',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Терпіти далі — може, сам заспокоїться»</div><div class="option-explanation">💡 Терпіння не зупиняє систематичне порушення меж.</div></div></div>
+<div class="option" data-correct="false" data-score="0" onclick="algSel(this,'alg4',4)"><div class="option-radio"></div><div class="option-text"><div class="option-label">«Помститися йому тим самим — нехай відчує»</div><div class="option-explanation">💡 Помста створює новий цикл порушення меж.</div></div></div>
 </div><div id="alg4f" class="feedback" style="display:none"></div>
 </div>
 
@@ -839,7 +843,10 @@ button{font-family:inherit}
 
 <section class="card hidden" id="s4t1">
 <h2>🔗 Завдання 1. Алгоритм виправлення помилки</h2>
-<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> Спочатку натисни на назву кроку в лівій колонці, потім на його опис у правій. Правильні пари підсвітиться зеленим.</div>
+<div class="feedback feedback-warning mb-24">
+<strong>📌 Інструкція:</strong> Спочатку натисни на назву кроку в лівій колонці, потім на його опис у правій. Правильні пари підсвітиться зеленим.<strong>  На телефоні:</strong> елементи розташовані один під одним. Спочатку обери назву кроку (зверху), потім — його опис (знизу).
+</div>
+</div>
 <div class="two-col-matching" id="twoColMatch">
 <div class="col-left">
 <div class="col-header">📋 Назва кроку</div>
@@ -859,7 +866,6 @@ button{font-family:inherit}
 <div id="s4t1f" class="feedback" style="display:none"></div>
 <div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4Theory')">← Назад</button><button class="btn btn-primary" onclick="chkTwoCol('step4_task1')">✓ Перевірити</button><button class="btn btn-success" onclick="showS4('s4t2')">Далі →</button></div>
 </section>
-
 <section class="card hidden" id="s4t2">
 <h2>🎭 Завдання 2. Аналіз ситуації: Захар і команда</h2>
 <div class="feedback feedback-warning mb-24"><strong>📌 Ситуація:</strong> Захар не виконав свою частину завдання й не попередив команду, через що учні не встигли завершити проєкт.</div>
@@ -873,16 +879,16 @@ button{font-family:inherit}
 <div>
 <p style="margin:12px 0;color:var(--text-muted);font-style:italic">📌 <strong>Які етичні принципи порушив Захар? (Обери 3)</strong></p>
 <div class="task-options" id="s4t2">
-<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">💎 Чесність — не попередив про проблему</div></div></div>
-<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🎯 Відповідальність — не виконав свою частину</div></div></div>
-<div class="option" data-correct="false" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🔒 Приватність — не стосується ситуації</div></div></div>
-<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🤝 Повага до внеску інших — знецінив їхній час і зусилля</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">💎 Чесність — не попередив про проблему заздалегідь</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🎯 Відповідальність — не виконав свою частину роботи</div></div></div>
+<!-- ВИПРАВЛЕНО: тепер це опис дії, якої Захар НЕ робив, тому учень зрозуміє, що обирати цей варіант не треба -->
+<div class="option" data-correct="false" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🔒 Приватність — поширив особисті дані або секрети членів команди</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🤝 Повага — знецінив час і зусилля інших учасників</div></div></div>
 </div>
 </div></div>
 <div id="s4t2f" class="feedback" style="display:none"></div>
 <div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4t1')">← Назад</button><button class="btn btn-primary" onclick="chkMulti('s4t2','s4t2f',3,'step4_task2')">✓ Перевірити</button><button class="btn btn-success" onclick="showS4('s4t3')">Далі →</button></div>
 </section>
-
 <section class="card hidden" id="s4t3">
 <h2>💬 Завдання 3. Конструктор відповіді: що мав би зробити Захар?</h2>
 <div class="feedback feedback-warning mb-24"><strong>📌 Завдання:</strong> Обери 3 репліки, які демонструють відповідальне визнання помилки.</div>
@@ -955,11 +961,11 @@ button{font-family:inherit}
 <div>
 <p style="margin:12px 0;color:var(--text-muted);font-style:italic">📌 <strong>Які прояви булінгу, кібербулінгу та дискримінації ти бачиш? (Обери 4)</strong></p>
 <div class="task-options" id="s5t1">
-<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🎭 Психологічний булінг — висміювання через одяг</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🚫 Ізоляція — не брали до проєктів, не дозволяли сідати поруч</div></div></div>
-<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">📱 Кібербулінг — поширення фото зі зневажливими коментарями</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">⚖️ Дискримінація за майновим станом</div></div></div>
 <div class="option" data-correct="false" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">😐 Це просто конфлікт між підлітками — нічого серйозного</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🎭 Психологічний булінг — висміювання через одяг</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">📱 Кібербулінг — поширення фото зі зневажливими коментарями</div></div></div>
 </div>
 </div></div>
 <div id="s5t1f" class="feedback" style="display:none"></div>
@@ -1366,7 +1372,7 @@ function chkMulti(gid,fid,need,tid){
     if(ok){
         opts.forEach(function(o){o.classList.add('disabled');});
         f.className='feedback feedback-success';
-        f.innerHTML='<strong>✅ Правильно!</strong> Ти верно визначив(ла) порушені принципи.';
+        f.innerHTML='<strong>✅ Правильно!</strong> Ти правильно визначив(ла) порушені принципи.';
         addC(tid);
         showToast('Завдання виконано!','🎉');
     }else{
@@ -2064,6 +2070,6 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 });
 </script>
-
+    
 </body>
 </html>
